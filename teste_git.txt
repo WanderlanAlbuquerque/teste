@@ -1,0 +1,58 @@
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ git branch -M main
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ git remote add origin https://github.com/WanderlanAlbuquerque/teste.git
+error: remote origin already exists.
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 10.56 KiB | 10.56 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/WanderlanAlbuquerque/teste.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ ls
+teste_git.docx
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ dir -a
+.  ..  .git  teste_git.docx
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ ls -a
+./  ../  .git/  teste.py  teste_git.docx
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ git add teste.py
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ git commit -m "segundo commit"
+[main 06c3de8] segundo commit
+ 1 file changed, 12 insertions(+)
+ create mode 100644 teste.py
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ git remote add origin https://github.com/WanderlanAlbuquerque/teste.git
+error: remote origin already exists.
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 528 bytes | 528.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/WanderlanAlbuquerque/teste.git
+   72546cf..06c3de8  main -> main
+branch 'main' set up to track 'origin/main'.
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$
