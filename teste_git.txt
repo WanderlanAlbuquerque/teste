@@ -1,3 +1,104 @@
+wcaca@BOOK-JLPVE9I28U MINGW64 ~
+$ dir
+Ambiente\ de\ Impressão
+Ambiente\ de\ Rede
+AppData
+Configurações\ Locais
+Contacts
+Cookies
+Dados\ de\ Aplicativos
+Documents
+Downloads
+Favorites
+Links
+Menu\ Iniciar
+Meus\ Documentos
+Modelos
+Music
+NTUSER.DAT
+NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+OneDrive
+Recent
+Saved\ Games
+Searches
+SendTo
+Sti_Trace.log
+Videos
+meu-projeto
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+ntuser.ini
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~
+$ cd ..
+
+wcaca@BOOK-JLPVE9I28U MINGW64 /c/Users
+$ ls
+'All Users'@  'Default User'@   SISTEMA/             'Usuário Padrão'@   wcaca/
+ Default/      Public/         'Todos os Usuários'@   desktop.ini
+
+wcaca@BOOK-JLPVE9I28U MINGW64 /c/Users
+$ cd wcaca
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~
+$ ls
+'Ambiente de Impressão'@
+'Ambiente de Rede'@
+ AppData/
+'Configurações Locais'@
+ Contacts/
+ Cookies@
+'Dados de Aplicativos'@
+ Documents/
+ Downloads/
+ Favorites/
+ Links/
+'Menu Iniciar'@
+'Meus Documentos'@
+ Modelos@
+ Music/
+ NTUSER.DAT
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TM.blf
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{a2332f18-cdbf-11ec-8680-002248483d79}.TMContainer00000000000000000002.regtrans-ms
+ OneDrive/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Sti_Trace.log
+ Videos/
+ meu-projeto/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~
+$ cd meu-projeto
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/wcaca/meu-projeto/.git/
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/wcaca/meu-projeto/.git/
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ ls
+teste_git.docx
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ git add teste_git.docx
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ git commit -m "testando commit"
+[main (root-commit) 72546cf] testando commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 teste_git.docx
+
 wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
 $ git branch -M main
 
@@ -53,6 +154,35 @@ Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/WanderlanAlbuquerque/teste.git
    72546cf..06c3de8  main -> main
 branch 'main' set up to track 'origin/main'.
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ ls -a
+./  ../  .git/  teste.py  teste_git.docx  teste_git.txt
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ git add teste_git.txt
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ git commit -m "terceiro commit"
+[main db1755b] terceiro commit
+ 1 file changed, 58 insertions(+)
+ create mode 100644 teste_git.txt
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 834 bytes | 834.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/WanderlanAlbuquerque/teste.git
+   06c3de8..db1755b  main -> main
+branch 'main' set up to track 'origin/main'.
+
+wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
+$ git remote add origin https://github.com/WanderlanAlbuquerque/teste.git
+error: remote origin already exists.
 
 wcaca@BOOK-JLPVE9I28U MINGW64 ~/meu-projeto (main)
 $
